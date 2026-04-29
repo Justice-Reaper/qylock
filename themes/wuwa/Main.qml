@@ -420,6 +420,45 @@ Rectangle {
             color: root.wGhost; opacity: 0.5
             font.letterSpacing: 0.5 * s
         }
+
+        Row {
+            anchors.right: parent.right; anchors.rightMargin: 44 * s
+            anchors.bottom: parent.bottom; anchors.bottomMargin: 26 * s
+            spacing: 12 * s
+
+            Text {
+                id: wuwaDate
+                font.family: mainFont.name; font.pixelSize: 12 * s
+                color: root.wSilver; opacity: 0.6
+                font.letterSpacing: 1.5 * s
+                anchors.verticalCenter: parent.verticalCenter
+            }
+                
+            Rectangle {
+                width: 2 * s; height: 16 * s
+                color: root.wCyan
+                opacity: 0.5
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            Text {
+                id: wuwaTime
+                font.family: mainFont.name; font.pixelSize: 16 * s
+                color: root.wWhite; font.bold: true
+                font.letterSpacing: 1.5 * s
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            Timer {
+                interval: 1000; running: true; repeat: true
+                onTriggered: {
+                    var d = new Date()
+                    wuwaTime.text = Qt.formatTime(d, "HH:mm")
+                    wuwaDate.text = Qt.formatDate(d, "yyyy / MM / dd")
+                }
+                Component.onCompleted: triggered()
+            }
+        }
         Item {
             id: centerCTA
             width: parent.width * 0.82
