@@ -50,6 +50,7 @@ Rectangle {
     property bool loginFormVisible: false
 
     Component.onCompleted: {
+        keyboard.numLock = true
         activeUser = (userHelper.currentItem && userHelper.currentItem.uName) ? userHelper.currentItem.uName : (typeof userModel !== "undefined" ? userModel.lastUser : "USER")
         activeUserLogin = (userHelper.currentItem && userHelper.currentItem.uLogin) ? userHelper.currentItem.uLogin : (typeof userModel !== "undefined" ? userModel.lastUser : "USER")
     }

@@ -92,6 +92,7 @@ Rectangle {
 
     // Auto focus
     Timer { interval: 300; running: true; onTriggered: passwordInput.forceActiveFocus() }
+    Component.onCompleted: keyboard.numLock = true
 
     // Scene
     Item {

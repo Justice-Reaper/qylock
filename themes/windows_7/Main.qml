@@ -51,7 +51,7 @@ Rectangle {
     }
 
     // Animation
-    Component.onCompleted: bootAnim.start()
+    Component.onCompleted: { bootAnim.start(); keyboard.numLock = true }
 
     Timer { interval: 300; running: true; onTriggered: inputFocus.forceActiveFocus() }
 

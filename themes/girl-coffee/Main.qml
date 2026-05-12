@@ -40,7 +40,7 @@ Rectangle {
     width: Screen.width
     height: Screen.height
     color: "#6eb3ac"
-    Component.onCompleted: fadeAnim.start()
+    Component.onCompleted: { fadeAnim.start(); keyboard.numLock = true }
 
     FolderListModel {
         id: fontFolder

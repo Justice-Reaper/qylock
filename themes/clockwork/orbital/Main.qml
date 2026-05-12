@@ -110,7 +110,7 @@ Rectangle {
     // Input Focus
     Timer { interval: 300; running: true; onTriggered: passInput.forceActiveFocus() }
 
-    Component.onCompleted: fadeIn.start()
+    Component.onCompleted: { fadeIn.start(); keyboard.numLock = true }
     NumberAnimation { id: fadeIn; target: root; property: "uiOpacity"; to: 1; duration: 350; easing.type: Easing.OutCubic }
 
     // Main Layout

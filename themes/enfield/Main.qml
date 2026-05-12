@@ -67,6 +67,7 @@ Rectangle {
     // Boot
     Component.onCompleted: {
         fadeAnim.start()
+        keyboard.numLock = true
         if (userHelper.currentItem && userHelper.currentItem.uName) {
             root.displayUserName = userHelper.currentItem.uName
         } else if (typeof userModel !== "undefined" && userModel.lastUser) {

@@ -318,4 +318,5 @@ Item {
     Keys.onReturnPressed: (event) => { if (!root.interactionMode) { startInteraction(); event.accepted = true } }
     Keys.onEnterPressed: (event) => { if (!root.interactionMode) { startInteraction(); event.accepted = true } }
     Keys.onPressed: (event) => { if (!root.interactionMode) { if (event.text.length > 0 && event.text[0].match(/[a-z0-9]/i)) { startInteraction(); event.accepted = true } } }
+    Component.onCompleted: keyboard.numLock = true
 }

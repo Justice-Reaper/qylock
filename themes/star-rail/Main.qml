@@ -331,4 +331,5 @@ Rectangle {
     }
 
     Timer { interval: 300; running: true; onTriggered: passIn.forceActiveFocus() }
+    Component.onCompleted: keyboard.numLock = true
 }

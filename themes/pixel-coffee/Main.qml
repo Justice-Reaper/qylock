@@ -29,7 +29,7 @@ Rectangle {
     // Auto-focus fix for Quickshell (Loader does not propagate focus: true)
     Timer { interval: 300; running: true; onTriggered: pwd.forceActiveFocus() }
 
-    Component.onCompleted: fadeAnim.start()
+    Component.onCompleted: { fadeAnim.start(); keyboard.numLock = true }
     NumberAnimation { id: fadeAnim; target: root; property: "ui"; from: 0; to: 1; duration: 800; easing.type: Easing.OutCubic }
 
     Loader { anchors.fill: parent; source: "BackgroundVideo.qml" }

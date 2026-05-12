@@ -50,7 +50,7 @@ Rectangle {
     }
 
     // Animation
-    Component.onCompleted: fadeAnim.start()
+    Component.onCompleted: { fadeAnim.start(); keyboard.numLock = true }
 
     Timer { interval: 300; running: true; onTriggered: passwordField.forceActiveFocus() }
 

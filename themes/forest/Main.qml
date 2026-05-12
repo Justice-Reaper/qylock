@@ -5,6 +5,7 @@ import QtQuick.Window
 import Qt5Compat.GraphicalEffects
 import QtMultimedia
 import Qt.labs.folderlistmodel
+import SddmComponents 2.0
 
 Item {
     // Wayland Cursor Fix
@@ -369,5 +370,5 @@ Item {
     
     // Boot
     NumberAnimation { id: fadeIn; target: root; property: "uiOpacity"; to: 1; duration: 2500; easing.type: Easing.OutCubic }
-    Component.onCompleted: fadeIn.start()
+    Component.onCompleted: { fadeIn.start(); keyboard.numLock = true }
 }

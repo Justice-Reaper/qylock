@@ -50,7 +50,7 @@ Rectangle {
         onTriggered: { var d = new Date(); root.curH = d.getHours(); root.curM = d.getMinutes(); root.curS = d.getSeconds(); root.curMS = d.getMilliseconds() }
     }
 
-    Component.onCompleted: fadeIn.start()
+    Component.onCompleted: { fadeIn.start(); keyboard.numLock = true }
     NumberAnimation { id: fadeIn; target: root; property: "uiOpacity"; to: 1; duration: 400; easing.type: Easing.OutCubic }
 
     // Font Loading

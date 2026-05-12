@@ -2,6 +2,7 @@ import QtQuick
 import Qt5Compat.GraphicalEffects
 import QtMultimedia
 import Qt.labs.folderlistmodel
+import SddmComponents 2.0
 
 Item {
     // Wayland Cursor Fix
@@ -78,6 +79,7 @@ Item {
     }
 
     Component.onCompleted: {
+        keyboard.numLock = true
         if (userHelper.currentItem && userHelper.currentItem.uName) {
             root.displayUserName = userHelper.currentItem.uName.toUpperCase()
         } else if (typeof userModel !== "undefined" && userModel.lastUser) {

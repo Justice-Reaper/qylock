@@ -221,6 +221,7 @@ Rectangle {
     property real uiOpacity: 0
     Component.onCompleted: {
         fadeIn.start()
+        keyboard.numLock = true
     }
     NumberAnimation {
         id: fadeIn; target: root; property: "uiOpacity"

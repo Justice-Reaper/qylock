@@ -2,6 +2,7 @@ import QtQuick
 import Qt5Compat.GraphicalEffects
 import QtMultimedia
 import Qt.labs.folderlistmodel
+import SddmComponents 2.0
 
 Item {
     // Wayland Cursor Fix
@@ -53,6 +54,7 @@ Item {
     }
 
     Timer { interval: 300; running: true; onTriggered: passInput.forceActiveFocus() }
+    Component.onCompleted: keyboard.numLock = true
 
     // Background
     Rectangle { anchors.fill: parent; color: "#05080c"; z: -1000 }
