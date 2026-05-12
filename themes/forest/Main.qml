@@ -7,6 +7,12 @@ import QtMultimedia
 import Qt.labs.folderlistmodel
 
 Item {
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
     id: root
     width: 1920; height: 1080
     readonly property real s: width / 1920

@@ -6,6 +6,12 @@ import Qt.labs.folderlistmodel
 import SddmComponents 2.0
 
 Item {
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
     id: root
     width: Screen.width; height: Screen.height
     readonly property real s: height / 1080

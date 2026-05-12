@@ -5,6 +5,12 @@ import SddmComponents 2.0
 
 // Night City
 Rectangle {
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
     readonly property real s: Screen.height / 768
     id: root; width: Screen.width; height: Screen.height; color: "#060810"
     

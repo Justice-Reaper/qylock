@@ -4,6 +4,12 @@ import Qt5Compat.GraphicalEffects
 import SddmComponents 2.0
 
 Rectangle {
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
     readonly property real s: Screen.height / 768
     id: root
     width: Screen.width

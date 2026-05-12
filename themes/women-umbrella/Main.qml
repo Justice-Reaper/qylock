@@ -6,6 +6,12 @@ import SddmComponents 2.0
 
 // Theme
 Rectangle {
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
     id: root
     width: Screen.width; height: Screen.height
     readonly property real s: height / 768

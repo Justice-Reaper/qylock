@@ -11,6 +11,13 @@ Rectangle {
     color: "transparent"
     readonly property real s: height / 1080
 
+    // Wayland Cursor Fix
+    MouseArea {
+        anchors.fill: parent
+        cursorShape: Qt.ArrowCursor
+        z: -1
+    }
+
     // Colors
     readonly property color fg:         "#fdfaf2" 
     readonly property color gold:       "#c9a063" 
