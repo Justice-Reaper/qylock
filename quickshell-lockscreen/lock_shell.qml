@@ -82,6 +82,18 @@ ShellRoot {
                 surface: Component {
                     WlSessionLockSurface {
                         color: "black"
+                        
+                        // Absorb unhandled gestures
+                        PinchHandler { target: null }
+                        WheelHandler { target: null }
+                        
+                        MouseArea {
+                            anchors.fill: parent
+                            acceptedButtons: Qt.AllButtons
+                            hoverEnabled: true
+                            onWheel: (wheel) => { wheel.accepted = true }
+                        }
+
                         Loader {
                             anchors.fill: parent
                             sourceComponent: themeComponent
