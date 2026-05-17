@@ -263,24 +263,54 @@ If you encounter library errors at the login screen:
         <img src="./Assets/the_last_of_us.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
       </td>
       <td align="center" width="50%" style="padding: 15px; border: none;">
-        <b>Honkai: Star Rail</b><br><br>
-        <img src="./Assets/star_rail.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+        <b>Field</b><br><br>
+        <img src="./Assets/field.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
       </td>
     </tr>
     <tr>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>Girl · Coffee</b><br><br>
+        <img src="./Assets/girl_coffee.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>Girl · Pillow</b><br><br>
+        <img src="./Assets/girl_pillow.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>Man · Bicycle</b><br><br>
+        <img src="./Assets/man_bicycle.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>Women · Umbrella</b><br><br>
+        <img src="./Assets/women_umbrella.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>Honkai: Star Rail</b><br><br>
+        <img src="./Assets/star_rail.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
       <td align="center" width="50%" style="padding: 15px; border: none;">
         <b>Genshin Impact</b><br><br>
         <img src="./Assets/genshin.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
       </td>
+    </tr>
+    <tr>
       <td align="center" width="50%" style="padding: 15px; border: none;">
         <b>Wuthering Waves</b><br><br>
         <img src="./Assets/wuwa.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
       </td>
-    </tr>
-    <tr>
       <td align="center" width="50%" style="padding: 15px; border: none;">
         <b>osu!</b><br><br>
         <img src="./Assets/osu.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%" style="padding: 15px; border: none;">
+        <b>osu! mania</b><br><br>
+        <img src="./Assets/osumania.gif" width="100%" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);"/>
       </td>
       <td align="center" width="50%" style="padding: 15px; border: none;">
         <b>Minecraft</b><br><br>
@@ -326,6 +356,7 @@ If you encounter library errors at the login screen:
       </td>
     </tr>
   </table>
+  </table>
 </div>
 
 
@@ -346,16 +377,20 @@ Huge thanks to all the amazing artists for these wallpapers and fonts! Here's wh
 
 | Theme | Wallpaper | Font | Theme | Wallpaper | Font |
 |:---|:---|:---|:---|:---|:---|
-| **Pixel · Coffee** | [MoeWalls](https://moewalls.com/pixel-art/cyberpunk-coffee-pixel-live-wallpaper/) | Pixelify Sans | **Winter** | [MoeWalls](https://moewalls.com/landscape/winter-forest-snow-live-wallpaper/) | Orbitron |
-| **Pixel · Dusk City** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/505-pixel-dusk-city-retro-anime-streets-live-wallpaper.html) | Pixelify Sans | **Dog Samurai** | [MoeWalls](https://moewalls.com/others/doge-samurai-crying-live-wallpaper/) | Orbitron |
-| **Pixel · Hollow Knight** | [MoeWalls](https://moewalls.com/pixel-art/hollow-knight-3-live-wallpaper/) | Pixelify Sans | **The Last of Us** | [MoeWalls](https://moewalls.com/games/the-last-of-us-sunset-live-wallpaper/) | Outfit |
-| **Pixel · Munchlax** | [MoeWalls](https://moewalls.com/pixel-art/munchlax-sleeping-on-the-field-pixel-live-wallpaper/) | Pixelify Sans | **Honkai: Star Rail** | [YouTube](https://www.youtube.com/watch?v=Pz7Tu25EyXI) | DIN Next |
-| **Pixel · Night City** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/400-night-city-pixel-art-cyberpunk-live-wallpaper.html) | Pixelify Sans | **Genshin Impact** | [YouTube](https://www.youtube.com/watch?v=XG3vTgitBLE) | HYWenHei |
-| **Pixel · Rainy Room** | [MoeWalls](https://moewalls.com/pixel-art/pixel-room-rainy-night-live-wallpaper/) | Pixelify Sans | **Wuthering Waves** | [YouTube](https://www.youtube.com/watch?v=xKKqi1zLrZ4) | Orbitron |
-| **Pixel · Skyscrapers** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/61-pixel-city.html) | Pixelify Sans | **Minecraft** | [Minecraft Wiki](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fminecraft.fandom.com%2Fwiki%2FBackground&ved=0CBkQjhxqFwoTCIC45qWs4pMDFQAAAAAdAAAAABAH&opi=89978449) | Minecraft |
-| **Enfield** | [WallsFlow](https://wallsflow.com/live-wallpapers/games/777-arknights-endfield-sakura-sanctuary-live-wallpaper.html) | Orbitron | **NieR: Automata** | [Reddit](https://www.reddit.com/r/nier/comments/7nqcy7/the_final_nier_automata_title_screen_made_into/) | FOT-Rodin Pro DB |
-| **Sword** | [WallsFlow](https://wallsflow.com/live-wallpapers/anime/761-silent-katana-forest-samurai-live-wallpaper.html) | The Last Shuriken | **Terraria** | [Terraria Forums](https://forums.terraria.org/index.php?threads/terraria-desktop-wallpapers.12644/) | Andy Bold |
-| **Forest** | [MoeWalls](https://moewalls.com/landscape/in-the-early-morning-forest-live-wallpaper/) | Figtree | **osu!** | [Official](https://osu.ppy.sh) | Torus Regular |
+| **Pixel · Coffee** | [MoeWalls](https://moewalls.com/pixel-art/cyberpunk-coffee-pixel-live-wallpaper/) | Pixelify Sans | **Pixel · Munchlax** | [MoeWalls](https://moewalls.com/pixel-art/munchlax-sleeping-on-the-field-pixel-live-wallpaper/) | Pixelify Sans |
+| **Pixel · Dusk City** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/505-pixel-dusk-city-retro-anime-streets-live-wallpaper.html) | Pixelify Sans | **Pixel · Night City** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/400-night-city-pixel-art-cyberpunk-live-wallpaper.html) | Pixelify Sans |
+| **Pixel · Hollow Knight** | [MoeWalls](https://moewalls.com/pixel-art/hollow-knight-3-live-wallpaper/) | Pixelify Sans | **Pixel · Rainy Room** | [MoeWalls](https://moewalls.com/pixel-art/pixel-room-rainy-night-live-wallpaper/) | Pixelify Sans |
+| **Pixel · Skyscrapers** | [WallsFlow](https://wallsflow.com/live-wallpapers/pixel-art/61-pixel-city.html) | Pixelify Sans | **Enfield** | [WallsFlow](https://wallsflow.com/live-wallpapers/games/777-arknights-endfield-sakura-sanctuary-live-wallpaper.html) | Orbitron |
+| **Sword** | [WallsFlow](https://wallsflow.com/live-wallpapers/anime/761-silent-katana-forest-samurai-live-wallpaper.html) | The Last Shuriken | **The Last of Us** | [MoeWalls](https://moewalls.com/games/the-last-of-us-sunset-live-wallpaper/) | Outfit |
+| **Field** | [MoeWalls](https://moewalls.com/anime/fading-away-live-wallpaper/) | - | **Girl · Coffee** | [MoeWalls](https://moewalls.com/anime/chill-afternoon-girl-live-wallpaper/) | - |
+| **Girl · Pillow** | [MoeWalls](https://moewalls.com/anime/lazy-afternoon-girl-live-wallpaper/) | Itim | **Man · Bicycle** | [MoeWalls](https://moewalls.com/landscape/traveling-with-the-bicycle-live-wallpaper/) | Itim |
+| **Women · Umbrella** | [MoeWalls](https://moewalls.com/anime/women-with-umbrella-live-wallpaper/) | Itim | **Forest** | [MoeWalls](https://moewalls.com/landscape/in-the-early-morning-forest-live-wallpaper/) | Figtree |
+| **Winter** | [MoeWalls](https://moewalls.com/landscape/winter-forest-snow-live-wallpaper/) | Orbitron | **Dog Samurai** | [MoeWalls](https://moewalls.com/others/doge-samurai-crying-live-wallpaper/) | Orbitron |
+| **Honkai: Star Rail** | [YouTube](https://www.youtube.com/watch?v=Pz7Tu25EyXI) | DIN Next | **Genshin Impact** | [YouTube](https://www.youtube.com/watch?v=XG3vTgitBLE) | HYWenHei |
+| **Wuthering Waves** | [YouTube](https://www.youtube.com/watch?v=xKKqi1zLrZ4) | Orbitron | **osu!** | [Official](https://osu.ppy.sh) | Torus Regular |
+| **osu! mania** | [Official](https://osu.ppy.sh) | Torus Regular | **Minecraft** | [Minecraft Wiki](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fminecraft.fandom.com%2Fwiki%2FBackground&ved=0CBkQjhxqFwoTCIC45qWs4pMDFQAAAAAdAAAAABAH&opi=89978449) | Minecraft |
+| **NieR: Automata** | [Reddit](https://www.reddit.com/r/nier/comments/7nqcy7/the_final_nier_automata_title_screen_made_into/) | FOT-Rodin Pro DB | **Reverse: 1999** | [Taptap](https://www.taptap.com/topic/21175628) | Outfit |
+| **Clockwork** | [WallsFlow](https://wallsflow.com/live-wallpapers/abstract/321-clock-mechanism-live-wallpaper.html) | Orbitron | **Terraria** | [Terraria Forums](https://forums.terraria.org/index.php?threads/terraria-desktop-wallpapers.12644/) | Andy Bold |
 | **Ninja Gaiden** | [Noisy Pixel](https://noisypixel.net/ninja-gaiden-4-wallpapers-art-team/) | Tektur | **Windows 7** | [WallpaperAccess](https://wallpaperaccess.com/windows-7-lock-screen) | Segoe UI |
 
 <br>
@@ -372,7 +407,7 @@ Huge thanks to all the amazing artists for these wallpapers and fonts! Here's wh
 <div align="center">
 
 ### 💖 SUPPORTERS
-**[Max](https://ko-fi.com/B0B1UPVVB)**  •  **Awkward/Aman **    •  **Chương Kính**  •  **MerhawiGhebrekal**  •  **Silenett**  •  **wawzi**  •  **franchecol**  •  **MerhawiGhebrekal**  •  **Trench Martyr**
+**[Max](https://ko-fi.com/B0B1UPVVB)**  •  **Awkward (Aman)**  •  **Chương Kính**  •  **MerhawiGhebrekal**  •  **Silenett**  •  **wawzi**  •  **franchecol**  •  **MerhawiGhebrekal**  •  **Trench Martyr**
 
 <br>
 
