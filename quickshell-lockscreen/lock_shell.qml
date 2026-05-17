@@ -37,9 +37,9 @@ ShellRoot {
             Quickshell.execDetached(["loginctl", "unlock-session"]);
 
             // Dynamic exit delay
-            let delay = 300;
+            let delay = 100;
             if (activeTheme.includes("clockwork") && sddmShim.config.enableWindup === "true") {
-                delay = 3000;
+                delay = 500;
             }
             quitTimer.interval = delay;
             quitTimer.start()
