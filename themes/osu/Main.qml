@@ -1689,7 +1689,7 @@ Rectangle {
             Item { width: 1; height: 30*s }
             OsuMenuItem { anchors.horizontalCenter: parent.horizontalCenter; label: "Reduce Difficulty"; centered: true; iconColor: "#F1C40F"; onActivated: { root.randomizeTheme(); failOverlay.opacity = 0; resetGame(); root.showingDiff = true } }
             OsuMenuItem { anchors.horizontalCenter: parent.horizontalCenter; label: "Try Again"; centered: true; iconColor: "#3498DB"; onActivated: { root.randomizeTheme(); failOverlay.opacity = 0; resetGame(); root.startGame() } }
-            OsuMenuItem { anchors.horizontalCenter: parent.horizontalCenter; label: "Back to Menu"; centered: true; iconColor: "#662D91"; onActivated: { root.randomizeTheme(); failOverlay.opacity = 0; resetGame(); root.gameActive = false } }
+            OsuMenuItem { anchors.horizontalCenter: parent.horizontalCenter; label: "Back to Menu"; centered: true; iconColor: "#662D91"; onActivated: { root.randomizeTheme(); failOverlay.opacity = 0; resetGame(); root.gameActive = false; passField.text = ""; passField.forceActiveFocus() } }
         }
     }
 
@@ -1708,8 +1708,6 @@ Rectangle {
         root.osuAccuracy = 100.0
         root.osuCircleCount = 0
         root.activeCircles = []
-        passField.text = ""
-        passField.forceActiveFocus()
     }
 
     // Accuracy Check

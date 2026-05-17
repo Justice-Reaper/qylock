@@ -900,7 +900,7 @@ Rectangle {
                         { label:"TRY AGAIN",    col:"#ff4444", act: function(){ root.randomizeTheme(); failOverlay.opacity=0; resetGame(); root.startGame() } },
                         { label:"LOWER DIFF",   col:"#F1C40F", act: function(){ root.randomizeTheme(); failOverlay.opacity=0; resetGame(); root.showingDiff=true } },
                         { label:"SETTINGS",     col:"#3498DB", act: function(){ failOverlay.opacity=0; root.showingSettings=true } },
-                        { label:"ABORT",        col:"#ffffff", act: function(){ root.randomizeTheme(); failOverlay.opacity=0; resetGame(); root.gameActive=false } }
+                        { label:"ABORT",        col:"#ffffff", act: function(){ root.randomizeTheme(); failOverlay.opacity=0; resetGame(); root.gameActive=false; passField.text=""; passField.forceActiveFocus() } }
                     ]
                     Rectangle {
                         width:180*s; height:90*s; radius:10*s
@@ -1147,7 +1147,6 @@ Rectangle {
         root.maniaCombo=0; root.maniaMaxCombo=0; root.maniaScore=0
         root.maniaAccuracy=100.0;
         root.clearAllNotes()
-        passField.text=""; passField.forceActiveFocus()
     }
 
     function clearAllNotes() {
