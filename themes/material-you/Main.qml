@@ -336,7 +336,11 @@ Rectangle {
                         anchors.fill: parent
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
-                        onClicked: if (!root.isQuickshell) root.sessionIndex = (root.sessionIndex + 1) % sessionModel.count;
+                        onClicked: {
+                            if (!root.isQuickshell && typeof sessionModel !== "undefined" && sessionModel.rowCount() > 0) {
+                                root.sessionIndex = (root.sessionIndex + 1) % sessionModel.rowCount();
+                            }
+                        }
                     }
                 }
 
@@ -484,6 +488,7 @@ Rectangle {
                 height: 180 * s
                 radius: 32 * s
                 color: "#E9F3EB"
+                transform: Translate { id: shakeTranslate }
                 
                 Column {
                     anchors.fill: parent
@@ -643,8 +648,8 @@ Rectangle {
                                 hoverEnabled: true
                                 cursorShape: Qt.PointingHandCursor
                                 onClicked: {
-                                    if (!root.isQuickshell) {
-                                        root.userIndex = (root.userIndex + 1) % userModel.count;
+                                    if (!root.isQuickshell && typeof userModel !== "undefined" && userModel.rowCount() > 0) {
+                                        root.userIndex = (root.userIndex + 1) % userModel.rowCount();
                                     }
                                 }
                             }
