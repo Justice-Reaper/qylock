@@ -8,7 +8,7 @@
 
 <div align="center">
 <pre>
-<a href="#sddm-setup">ꜱᴅᴅᴍ</a>  •  <a href="#quickshell-setup">ǫᴜɪᴄᴋsʜᴇʟʟ</a>  •  <a href="#faq">ꜰᴀǫ</a>  •  <a href="#gallery">ɢᴀʟʟᴇʀʏ</a>  •  <a href="#acknowledgements">ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇᴍᴇɴᴛꜱ</a>  •  <a href="#credits">ᴄʀᴇᴅɪᴛꜱ</a>
+<a href="#sddm-setup">ꜱᴅᴅᴍ</a>  •  <a href="#quickshell-setup">ǫᴜɪᴄᴋsʜᴇʟʟ</a>  •  <a href="#nixos-setup">ɴɪxᴏs</a>  •  <a href="#faq">ꜰᴀǫ</a>  •  <a href="#gallery">ɢᴀʟʟᴇʀʏ</a>  •  <a href="#acknowledgements">ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇᴍᴇɴᴛꜱ</a>  •  <a href="#credits">ᴄʀᴇᴅɪᴛꜱ</a>
 </pre>
 </div>
 
@@ -122,7 +122,72 @@ Point your Window Manager keybind (e.g., in Hyprland, Qtile, Sway, or i3) direct
 
 <br>
 
+<p align="center">━━━━━━━ ❖ ━━━━━━━</p>
 
+<a id="nixos-setup"></a>
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-NIXOS%20SETUP-5277c3?style=for-the-badge&labelColor=1a1b26&logo=nixos&logoColor=white" height="60" />
+</p>
+
+<br>
+
+A flake is provided for NixOS users — no `sddm.sh` / `quickshell.sh` needed. Themes live in the Nix store and the active theme is chosen declaratively.
+
+#### 🚀 USAGE
+
+Add the input and import the module in your `flake.nix`:
+
+```nix
+{
+  inputs.qylock.url = "github:Darkkal44/qylock";
+
+  outputs = { self, nixpkgs, qylock, ... }: {
+    nixosConfigurations.my-host = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        qylock.nixosModules.default
+        ({ pkgs, ... }: {
+          services.displayManager.sddm.enable = true;
+          services.displayManager.sddm.wayland.enable = true;
+
+          programs.qylock = {
+            enable = true;
+            theme = "nier-automata";          # any directory name under themes/
+            # sddm.enable = true;             # installs theme + sets it active (default)
+            # quickshell.enable = true;       # adds `qylock-lock` to PATH (default)
+
+            # Optional per-theme tweaks (replaces the interactive prompts):
+            themeOptions = {
+              terraria.backgroundMode = "time";              # time | random | static
+              Genshin.backgroundMode = "time";
+              clockwork.orbital = { themeMode = "dark"; enableWindup = true; };
+              osu.gameMode = "menu";                         # menu | game
+            };
+          };
+        })
+      ];
+    };
+  };
+}
+```
+
+For the Quickshell lockscreen, bind your WM keybind to `qylock-lock` (instead of `~/.local/share/quickshell-lockscreen/lock.sh`). Pass a theme name as `$1` to override on the fly: `qylock-lock clockwork/tape`.
+
+#### 📦 OUTPUTS
+
+| Output | Purpose |
+|--:|:---|
+| `packages.<sys>.qylock-sddm-themes` | SDDM themes under `share/sddm/themes/` |
+| `packages.<sys>.qylock-quickshell` | `qylock-lock` wrapper with Qt6 QML deps wired in |
+| `devShells.<sys>.default` | `quickshell`, qt6, gstreamer, fzf — to run the bash scripts locally |
+| `nixosModules.default` | `programs.qylock.*` options shown above |
+
+> [!NOTE]
+> The flake pins `nixos-unstable` because `quickshell` isn't in stable nixpkgs yet. If your system tracks a stable channel, override the flake's `nixpkgs` input to your unstable channel.
+
+<br>
 
 <p align="center">━━━━━━━ ◈ ━━━━━━━</p>
 
