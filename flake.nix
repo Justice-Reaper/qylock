@@ -87,9 +87,13 @@
               cp -r themes $out/share/qylock/themes
 
               mkdir -p $out/bin
+              qmlPath="${pkgs.qt6.qt5compat}/lib/qt-6/qml:${pkgs.qt6.qtdeclarative}/lib/qt-6/qml:${pkgs.qt6.qtmultimedia}/lib/qt-6/qml:${pkgs.qt6.qtsvg}/lib/qt-6/qml"
+
               makeWrapper $out/share/qylock/lock.sh $out/bin/qylock-lock \
                 --set-default QS_THEME "${defaultTheme}" \
                 --set QYLOCK_THEMES_ROOT "$out/share/qylock/themes" \
+                --suffix QML2_IMPORT_PATH : "$qmlPath" \
+                --suffix QML_IMPORT_PATH : "$qmlPath" \
                 --prefix PATH : ${pkgs.lib.makeBinPath [
                   pkgs.quickshell
                   pkgs.psmisc
