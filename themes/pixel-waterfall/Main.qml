@@ -1,8 +1,5 @@
 import QtQuick
 import QtQuick.Window
-import Qt5Compat.GraphicalEffects
-import Qt.labs.folderlistmodel
-import SddmComponents 2.0
 
 Rectangle {
     id: root
@@ -23,15 +20,9 @@ Rectangle {
     readonly property color darkTealLine: "#1c5b6e"
     readonly property color watermarkTeal: "#3892a8"
 
-    FolderListModel {
-        id: fontFolder
-        folder: Qt.resolvedUrl("font")
-        nameFilters: ["*.ttf", "*.otf"]
-    }
-
-    FontLoader {
+    QtObject {
         id: pf
-        source: fontFolder.count > 0 ? "font/" + fontFolder.get(0, "fileName") : ""
+        readonly property string name: "Inter"
     }
 
     ListView {
@@ -214,7 +205,7 @@ Rectangle {
                     font.pixelSize: 18 * s
                     font.letterSpacing: 4 * s
                     echoMode: TextInput.Password
-                    passwordCharacter: "■"
+                    passwordCharacter: "●"
                     onTextEdited: errText.text = ""
                     focus: true
                     clip: true

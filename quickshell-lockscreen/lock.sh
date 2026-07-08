@@ -18,7 +18,7 @@ if [ -n "$1" ]; then
 elif [ -f "$CONFIG_FILE" ]; then
     export QS_THEME=$(cat "$CONFIG_FILE")
 else
-    export QS_THEME="nier-automata"
+    export QS_THEME="pixel-waterfall"
 fi
 
 # Set theme path

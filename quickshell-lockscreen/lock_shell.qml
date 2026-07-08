@@ -8,7 +8,7 @@ import "./shim"
 ShellRoot {
     id: shellRoot
 
-    property string activeTheme: Quickshell.env("QS_THEME") || "nier-automata"
+    property string activeTheme: Quickshell.env("QS_THEME") || "pixel-waterfall"
     property string themePath: Quickshell.env("QS_THEME_PATH") || (Quickshell.shellDir + "/themes_link/" + activeTheme)
 
     readonly property var sddm: sddmShim.sddm
@@ -37,11 +37,7 @@ ShellRoot {
             Quickshell.execDetached(["loginctl", "unlock-session"]);
 
             // Dynamic exit delay
-            let delay = 100;
-            if (activeTheme.includes("clockwork") && sddmShim.config.enableWindup === "true") {
-                delay = 500;
-            }
-            quitTimer.interval = delay;
+            quitTimer.interval = 100;
             quitTimer.start()
         }
     }
