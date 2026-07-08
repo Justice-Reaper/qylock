@@ -335,7 +335,7 @@ Rectangle {
                     Rectangle {
                         anchors.fill: parent
                         anchors.margins: 1.5 * s
-                        color: modelData.a === 2 ? root.lightCyan : root.darkTealLine
+                        color: root.darkTealLine
                         opacity: pm.containsMouse ? 0.35 : 0
                         Behavior on opacity { NumberAnimation { duration: 120 } }
                     }
