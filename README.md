@@ -40,6 +40,8 @@ Install these dependencies with your distro's package manager (names may vary)
 #### 🚀 INSTALLATION
 
 ```sh
+git clone https://github.com/Justice-Reaper/qylock.git
+cd qylock
 chmod +x sddm.sh && ./sddm.sh
 chmod +x quickshell.sh && ./quickshell.sh
 ```
