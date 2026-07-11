@@ -33,7 +33,7 @@ Install these dependencies with your distro's package manager (names may vary)
 
 | | Packages |
 |--:|:---|
-| **Core** | `sddm` `qt6-declarative` |
+| **Core** | `sddm` `quickshell` `qt6-declarative` |
 | **Video** | `qt6-multimedia` `qt6-multimedia-ffmpeg` |
 | **Font** | `inter-font` |
 
