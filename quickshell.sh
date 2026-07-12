@@ -15,7 +15,7 @@ echo ":: Installing Quickshell lockscreen (theme: $THEME)"
 # Deploy the lockscreen wrapper
 rm -rf "$TARGET_DIR"
 cp -r "$DIR/quickshell-lockscreen" "$TARGET_DIR"
-ln -sfn "$DIR/themes" "$TARGET_DIR/themes_link"
+cp -r "$DIR/themes" "$TARGET_DIR/themes"
 chmod +x "$TARGET_DIR/lock.sh"
 
 # Set the theme

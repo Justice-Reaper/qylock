@@ -22,10 +22,10 @@ else
 fi
 
 # Set theme path
-if [ -d "$DIR/../themes" ] && [ ! -d "$DIR/themes_link" ]; then
-    export QS_THEME_PATH="$DIR/../themes/$QS_THEME"
+if [ -d "$DIR/themes" ]; then
+    export QS_THEME_PATH="$DIR/themes/$QS_THEME"
 else
-    export QS_THEME_PATH="$DIR/themes_link/$QS_THEME"
+    export QS_THEME_PATH="$DIR/../themes/$QS_THEME"
 fi
 
 echo "Locking with Quickshell using theme: $QS_THEME"

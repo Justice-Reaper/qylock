@@ -9,7 +9,7 @@ ShellRoot {
     id: shellRoot
 
     property string activeTheme: Quickshell.env("QS_THEME") || "pixel-waterfall"
-    property string themePath: Quickshell.env("QS_THEME_PATH") || (Quickshell.shellDir + "/themes_link/" + activeTheme)
+    property string themePath: Quickshell.env("QS_THEME_PATH") || (Quickshell.shellDir + "/themes/" + activeTheme)
 
     readonly property var sddm: sddmShim.sddm
     readonly property var config: sddmShim.config
