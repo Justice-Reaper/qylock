@@ -91,7 +91,7 @@ Point your window manager keybind (Hyprland, Sway, i3, Qtile...) at:
 
 <div align="center">
 
-Built on **[qylock](https://github.com/Darkkal44/qylock)** by **[Darkkal44](https://github.com/Darkkal44)** — all the original theme work, scripts and structure are theirs
+Built on **[qylock](https://github.com/Darkkal44/qylock)** by **[Darkkal44](https://github.com/Darkkal44)** — all original theme work, scripts, and project structure are credited to the original author
 
 </div>
 
