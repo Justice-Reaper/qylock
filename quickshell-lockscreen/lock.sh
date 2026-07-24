@@ -34,5 +34,8 @@ echo "Theme path: $QS_THEME_PATH"
 # Kill active lockers
 killall -9 hyprlock swaylock wlogout 2>/dev/null || true
 
+# Kill any previous instance of this lockscreen
+pkill -9 -f 'quickshell -p .*lock_shell.qml' 2>/dev/null || true
+
 # Execute lock screen
 quickshell -p "$DIR/lock_shell.qml"
